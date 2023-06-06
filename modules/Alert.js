@@ -11,6 +11,16 @@ class Alert {
     this.title = title;
     this.message = message;
   }
-  
+
+  htmlContentAlert() {
+    return `<div class="alert ${this.type}">
+      <div class="alert-header">
+        <h3 class="alert-title">${this.title}</h3> <button type="button" id="close-alert">X</button>
+      </div>
+      <p class="alert-message">${this.message}</p>
+    </div>
+    `;
+  }
+
 }
 export default Alert;
