@@ -15,3 +15,43 @@ body {
   color: #0e0e0e;
   font-size: 14px;
 }
+
+body,
+header,
+main,
+section {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 768px));
+  justify-content: center;
+  min-height: calc(100vh - (64px + 64px));
+}
+
+section {
+  padding: 3rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+nav,
+footer {
+  border: 2px solid #2121c8;
+  padding: 1rem;
+}
+
+footer .github-dev-account {
+  color: #0e0e0e;
+  font-weight: 700;
+}
