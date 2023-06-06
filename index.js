@@ -1,6 +1,7 @@
 import AwesomeBookLibrary from './modules/AwesomeBookLibrary.js';
-import { currentDateTime } from './modules/Header.js';
+import { PageNavigation, currentDateTime } from './modules/Header.js';
 
+PageNavigation();
 currentDateTime();
 
 const app = new AwesomeBookLibrary();
