@@ -22,5 +22,12 @@ class Alert {
     `;
   }
 
+  removeHandlerEvent() {
+    document.querySelector('#close-alert').addEventListener('click', () => {
+      this.container.innerHTML = '';
+    });
+  }
+
+
 }
 export default Alert;
