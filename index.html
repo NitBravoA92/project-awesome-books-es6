@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Book</title>
+  <link rel="icon" type="image/vnd.icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" id="logo-webpage">Awesome Books</a>
+      <ul id="nav-section">
+        <li class="nav-sections"><a href="#" class="nav-link change-color" data-url="all-awesome-books">List</a></li>
+        <li class="nav-sections"><a href="#" class="nav-link" data-url="add-new-book">Add New</a></li>
+        <li class="nav-sections"><a href="#" class="nav-link" data-url="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="date-container"></div>
+  </header>
+  <main>
+    <section id="all-awesome-books">
+      <h1 class="section-title">All awesome books</h1>
+      <div id="books-container">
+
+      </div>
+    </section>
+    <section id="add-new-book" class="hide">
+      <h2 class="section-title">Add a new book</h2>
+      <div id="form-container">
+        <div id="form-result"></div>
+        <form id="form-book" action="#">
+          <input type="text" id="inputTitle" placeholder="Title" required> <br> <br>
+          <input type="text" id="inputAuthor" placeholder="Author" required> <br> <br>
+          <button type="submit" id="book-submit">Add</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact" class="hide">
+      <h2>Contact Information</h2>
+      <div id="contact-container">
+        <h3>Do you have any questions or you just want to say "Hello"?</h3>
+        <p>You can reach out to us!</p>
+        <ul id="contact-list">
+          <li>My e-mail: nbravoalcala@gmail.com</li>
+          <li>My phone number: 0043586534422</li>
+          <li>My address: Streetname 22, 84503 Caracas, Venezuela</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 <a href="https://github.com/NitBravoA92" class="github-dev-account" target="_blank" rel="noopener">Carmen Bravo</a>. All rights reserved.</p>
+  </footer>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
