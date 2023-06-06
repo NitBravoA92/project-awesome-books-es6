@@ -30,13 +30,16 @@ class AwesomeBookLibrary {
 
   saveBook = (event) => {
     event.preventDefault();
+    const alert = new Alert('#form-result');
     const { inputTitle, inputAuthor } = this.formAddBook;
     if (inputTitle.validity.valueMissing || inputAuthor.validity.valueMissing) {
+      alert.error('Error!', 'You must fill in all the fields.');
       return;
     }
     const book = new Book(inputTitle.value, inputAuthor.value);
     this.books.unshift(book);
     this.storageBooks();
+    alert.success('Success!', 'The book has been saved successfully.');
     this.formAddBook.reset();
     inputTitle.focus();
     this.renderBooks();
