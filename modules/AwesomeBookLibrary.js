@@ -1,4 +1,5 @@
 import Book from "./Book.js";
+import Alert from './Alert.js';
 
 class AwesomeBookLibrary {
   constructor() {
