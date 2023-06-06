@@ -230,3 +230,53 @@ h3 {
   margin-left: 7%;
   margin-top: 4%;
 }
+
+/* form alerts */
+#form-result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.alert {
+  padding: 0.8rem;
+  border: none;
+  box-shadow: 0 1px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.alert.success {
+  background-color: #108437;
+}
+
+.alert.error {
+  background-color: #7d1619;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.4rem;
+}
+
+.alert-title,
+#close-alert {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#close-alert {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.alert-message {
+  font-size: 0.9em;
+  color: #fff;
+}
+
