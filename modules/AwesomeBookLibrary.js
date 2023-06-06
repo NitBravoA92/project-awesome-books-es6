@@ -25,6 +25,20 @@ class AwesomeBookLibrary {
     localStorage.setItem("library", JSON.stringify(this.books));
   }
 
+  saveBook = (event) => {
+    event.preventDefault();
+    const { inputTitle, inputAuthor } = this.formAddBook;
+    if (inputTitle.validity.valueMissing || inputAuthor.validity.valueMissing) {
+      return;
+    }
+    const book = new Book(inputTitle.value, inputAuthor.value);
+    this.books.unshift(book);
+    this.storageBooks();
+    this.formAddBook.reset();
+    inputTitle.focus();
+    this.renderBooks();
+  }
+
   removeBook = (event) => {
     const bookIndex = event.target.parentElement.dataset.item;
     this.books.splice(bookIndex, 1);
