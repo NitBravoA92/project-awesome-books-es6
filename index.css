@@ -55,3 +55,41 @@ footer .github-dev-account {
   color: #0e0e0e;
   font-weight: 700;
 }
+
+#logo-webpage {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #0e0e0e;
+}
+
+#nav-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-sections:not(:first-child) {
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.nav-link {
+  color: #1a1919;
+}
+
+.nav-link:hover {
+  color: #2121c8;
+}
+
+#date-container {
+  width: 100%;
+  text-align: right;
+  padding: 0.3rem 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.change-color {
+  color: #2121c8;
+}
