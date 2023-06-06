@@ -157,3 +157,59 @@ footer .github-dev-account {
   border-color: #430404;
   color: #fff;
 }
+
+
+#form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-book {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0 0.1rem;
+}
+
+#form-book input {
+  width: 100%;
+  padding: 0.6rem;
+  outline: #1a1919;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#form-book button {
+  padding: 0.5rem 1.3rem;
+  border: none;
+  background-color: #3b3bd6;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#form-book button:hover {
+  background-color: #fff;
+  color: #3b3bd6;
+  border: 2px solid #3b3bd6;
+}
+
+#form-book button:active {
+  background-color: #2121c8;
+  color: #fff;
+  border: none;
+}
+
+#form-book button:disabled {
+  background-color: #d9d9dd;
+  color: #bcbbbb;
+  border: none;
+}
