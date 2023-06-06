@@ -18,6 +18,13 @@ class AwesomeBookLibrary {
     localStorage.setItem('library', JSON.stringify(this.books));
   }
 
+  removeBook = (event) => {
+    const bookIndex = event.target.parentElement.dataset.item;
+    this.books.splice(bookIndex, 1);
+    this.storageBooks();
+    this.renderBooks();
+  }
+
   generateBookItem(book, index) {
     const bookItem = document.createElement('div');
     const bookDetails = document.createElement('div');
