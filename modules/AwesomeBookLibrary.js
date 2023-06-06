@@ -6,4 +6,9 @@ class AwesomeBookLibrary {
     this.booksContainer = document.querySelector('#books-container');
     this.formAddBook = document.querySelector('#form-book');
   }
+
+  storageBooks() {
+    localStorage.setItem('library', JSON.stringify(this.books));
+  }
+  
 }
