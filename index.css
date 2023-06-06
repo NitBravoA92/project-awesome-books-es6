@@ -103,3 +103,57 @@ footer .github-dev-account {
   padding: 2.5rem 0;
   color: #3b3bd6;
 }
+
+
+#books-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.book {
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-out;
+  background-color: #fff;
+}
+
+.book:nth-child(even) {
+  background-color: #ebebf9;
+}
+
+.book:hover {
+  background-color: #dbdbf0;
+}
+
+.book .book-details {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.book button {
+  padding: 0.5rem 1rem;
+  background-color: #a40606;
+  border: 2px solid #a40606;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book button:hover {
+  background-color: #fff;
+  color: #a40606;
+}
+
+.book button:active {
+  background-color: #430404;
+  border-color: #430404;
+  color: #fff;
+}
