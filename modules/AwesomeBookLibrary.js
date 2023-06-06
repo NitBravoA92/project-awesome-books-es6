@@ -73,3 +73,5 @@ class AwesomeBookLibrary {
     return bookItem;
   }
 }
+
+export default AwesomeBookLibrary;
