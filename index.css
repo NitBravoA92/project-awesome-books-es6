@@ -93,3 +93,13 @@ footer .github-dev-account {
 .change-color {
   color: #2121c8;
 }
+
+.section-title {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  padding: 2.5rem 0;
+  color: #3b3bd6;
+}
