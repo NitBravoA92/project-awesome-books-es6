@@ -12,6 +12,14 @@ class Alert {
     this.message = message;
   }
 
+  renderAlert() {
+    this.container.innerHTML = this.htmlContentAlert();
+    this.closeTimeout = setTimeout(() => {
+      this.container.innerHTML = '';
+    }, 5000);
+    this.removeHandlerEvent();
+  }
+
   htmlContentAlert() {
     return `<div class="alert ${this.type}">
       <div class="alert-header">
@@ -25,9 +33,10 @@ class Alert {
   removeHandlerEvent() {
     document.querySelector('#close-alert').addEventListener('click', () => {
       this.container.innerHTML = '';
+      if (typeof this.closeTimeout === 'number') {
+        clearTimeout(this.closeTimeout);
+      }
     });
   }
-
-
 }
 export default Alert;
