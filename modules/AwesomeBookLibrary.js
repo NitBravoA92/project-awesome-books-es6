@@ -7,6 +7,13 @@ class AwesomeBookLibrary {
     this.formAddBook = document.querySelector('#form-book');
   }
 
+  renderBooks() {
+    this.booksContainer.innerHTML = '';
+    this.books.forEach((book, index) => {
+      this.booksContainer.appendChild(this.generateBookItem(book, index));
+    });
+  }
+
   storageBooks() {
     localStorage.setItem('library', JSON.stringify(this.books));
   }
