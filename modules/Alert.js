@@ -44,6 +44,11 @@ class Alert {
     this.setAlertInfo(title, message);
     this.renderAlert();
   }
-  
+
+  error(title, message) {
+    this.type = 'error';
+    this.setAlertInfo(title, message);
+    this.renderAlert();
+  }
 }
 export default Alert;
