@@ -5,6 +5,8 @@ class AwesomeBookLibrary {
     this.books = [];
     this.booksContainer = document.querySelector("#books-container");
     this.formAddBook = document.querySelector("#form-book");
+    /* Handle the 'Add a new book' form submit event */
+    this.formAddBook.addEventListener("submit", this.saveBook);
   }
 
   initBooks() {
@@ -37,7 +39,7 @@ class AwesomeBookLibrary {
     this.formAddBook.reset();
     inputTitle.focus();
     this.renderBooks();
-  }
+  };
 
   removeBook = (event) => {
     const bookIndex = event.target.parentElement.dataset.item;
