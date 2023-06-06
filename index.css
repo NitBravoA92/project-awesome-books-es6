@@ -280,3 +280,20 @@ h3 {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  #form-book {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+@media (min-width: 992px) {
+  #form-book {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
