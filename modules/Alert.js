@@ -38,5 +38,12 @@ class Alert {
       }
     });
   }
+
+  success(title, message) {
+    this.type = 'success';
+    this.setAlertInfo(title, message);
+    this.renderAlert();
+  }
+  
 }
 export default Alert;
